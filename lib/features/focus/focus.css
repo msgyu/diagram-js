@@ -1,0 +1,24 @@
+/* Focus/Spotlight styles for diagram-js */
+
+.djs-focus-spotlight {
+  transition: opacity 0.3s ease;
+}
+
+.djs-focus-spotlight svg {
+  overflow: visible;
+}
+
+/* Spotlight mask effect */
+.djs-focus-spotlight rect {
+  transition: opacity 0.3s ease;
+}
+
+/* Optional: Add focus indicator to focused elements */
+.djs-element.djs-focused {
+  filter: drop-shadow(0 0 8px rgba(0, 120, 212, 0.5));
+}
+
+/* Smooth transitions for viewport changes */
+.djs-container.djs-focus-animating .djs-viewport {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
